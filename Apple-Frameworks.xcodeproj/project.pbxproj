@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2FB07A2D18342B008985E6 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2FB0792D18342B008985E6 /* FrameworkDetailView.swift */; };
 		FA9185452D182D19002023BA /* Apple_FrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9185442D182D19002023BA /* Apple_FrameworksApp.swift */; };
 		FA9185472D182D19002023BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9185462D182D19002023BA /* ContentView.swift */; };
 		FA9185492D182D1A002023BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9185482D182D1A002023BA /* Assets.xcassets */; };
 		FA91854C2D182D1A002023BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA91854B2D182D1A002023BA /* Preview Assets.xcassets */; };
+		FA9185562D182E7D002023BA /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9185552D182E7D002023BA /* Framework.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA2FB0792D18342B008985E6 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		FA9185412D182D19002023BA /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9185442D182D19002023BA /* Apple_FrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FrameworksApp.swift; sourceTree = "<group>"; };
 		FA9185462D182D19002023BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA9185482D182D1A002023BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA91854B2D182D1A002023BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA9185552D182E7D002023BA /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		FA9185432D182D19002023BA /* Apple-Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA9185532D182D5D002023BA /* Models */,
+				FA9185522D182D53002023BA /* Views */,
+				FA9185542D182D64002023BA /* ViewModels */,
 				FA9185442D182D19002023BA /* Apple_FrameworksApp.swift */,
-				FA9185462D182D19002023BA /* ContentView.swift */,
 				FA9185482D182D1A002023BA /* Assets.xcassets */,
 				FA91854A2D182D1A002023BA /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				FA91854B2D182D1A002023BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA9185522D182D53002023BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA9185462D182D19002023BA /* ContentView.swift */,
+				FA2FB0792D18342B008985E6 /* FrameworkDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA9185532D182D5D002023BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA9185552D182E7D002023BA /* Framework.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA9185542D182D64002023BA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2FB07A2D18342B008985E6 /* FrameworkDetailView.swift in Sources */,
 				FA9185472D182D19002023BA /* ContentView.swift in Sources */,
+				FA9185562D182E7D002023BA /* Framework.swift in Sources */,
 				FA9185452D182D19002023BA /* Apple_FrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +307,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +315,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.letiendat.Apple-Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,6 +340,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +348,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.letiendat.Apple-Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
